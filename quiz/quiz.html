@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>General Knowledge Quiz</title>
+
+<script>
+function checkQuiz()
+{
+    var score = 0;
+
+    if(document.getElementById("q1b").checked) score++;
+    if(document.getElementById("q2a").checked) score++;
+    if(document.getElementById("q3d").checked) score++;
+    if(document.getElementById("q4c").checked) score++;
+    if(document.getElementById("q5a").checked) score++;
+    if(document.getElementById("q6b").checked) score++;
+    if(document.getElementById("q7c").checked) score++;
+    if(document.getElementById("q8d").checked) score++;
+    if(document.getElementById("q9a").checked) score++;
+    if(document.getElementById("q10b").checked) score++;
+
+    alert("Your Score: " + score + " / 10");
+
+    if(score >= 5)
+        alert("Congratulations! You Passed.");
+    else
+        alert("Better Luck Next Time!");
+}
+</script>
+
+</head>
+
+<body bgcolor="lightcyan">
+
+<center>
+<h2> General Knowledge Quiz </h2>
+
+Name:
+<input type="text"><br><br>
+
+Password:
+<input type="password"><br><br>
+
+<input type="button" value="Start Quiz">
+</center>
+
+<hr>
+
+<div style="margin-left:50px;">
+
+<h3>1. What is the capital of India?</h3>
+<input type="radio" name="q1"> Mumbai<br>
+<input type="radio" name="q1" id="q1b"> New Delhi<br>
+<input type="radio" name="q1"> Chennai<br>
+<input type="radio" name="q1"> Kolkata<br>
+
+<h3>2. Which is the largest planet in our Solar System?</h3>
+<input type="radio" name="q2" id="q2a"> Jupiter<br>
+<input type="radio" name="q2"> Mars<br>
+<input type="radio" name="q2"> Earth<br>
+<input type="radio" name="q2"> Venus<br>
+
+<h3>3. Who wrote the National Anthem of India?</h3>
+<input type="radio" name="q3"> Mahatma Gandhi<br>
+<input type="radio" name="q3"> Jawaharlal Nehru<br>
+<input type="radio" name="q3"> Subhas Chandra Bose<br>
+<input type="radio" name="q3" id="q3d"> Rabindranath Tagore<br>
+
+<h3>4. Which is the largest ocean in the world?</h3>
+<input type="radio" name="q4"> Indian Ocean<br>
+<input type="radio" name="q4"> Atlantic Ocean<br>
+<input type="radio" name="q4" id="q4c"> Pacific Ocean<br>
+<input type="radio" name="q4"> Arctic Ocean<br>
+
+<h3>5. Which is the national animal of India?</h3>
+<input type="radio" name="q5" id="q5a"> Tiger<br>
+<input type="radio" name="q5"> Lion<br>
+<input type="radio" name="q5"> Elephant<br>
+<input type="radio" name="q5"> Peacock<br>
+
+<h3>6. How many continents are there in the world?</h3>
+<input type="radio" name="q6"> 5<br>
+<input type="radio" name="q6" id="q6b"> 7<br>
+<input type="radio" name="q6"> 6<br>
+<input type="radio" name="q6"> 8<br>
+
+<h3>7. Which is the longest river in the world?</h3>
+<input type="radio" name="q7"> Amazon<br>
+<input type="radio" name="q7"> Ganga<br>
+<input type="radio" name="q7" id="q7c"> Nile<br>
+<input type="radio" name="q7"> Yangtze<br>
+
+<h3>8. Which planet is known as the Red Planet?</h3>
+<input type="radio" name="q8"> Saturn<br>
+<input type="radio" name="q8"> Mercury<br>
+<input type="radio" name="q8"> Venus<br>
+<input type="radio" name="q8" id="q8d"> Mars<br>
+
+<h3>9. Who is known as the Father of the Nation in India?</h3>
+<input type="radio" name="q9" id="q9a"> Mahatma Gandhi<br>
+<input type="radio" name="q9"> B. R. Ambedkar<br>
+<input type="radio" name="q9"> Sardar Patel<br>
+<input type="radio" name="q9"> Bhagat Singh<br>
+
+<h3>10. Which is the largest mammal in the world?</h3>
+<input type="radio" name="q10"> Elephant<br>
+<input type="radio" name="q10" id="q10b"> Blue Whale<br>
+<input type="radio" name="q10"> Giraffe<br>
+<input type="radio" name="q10"> Hippopotamus<br>
+
+<br><br>
+
+<input type="button" value="Submit Quiz" onclick="checkQuiz()">
+
+</div>
+
+</body>
+</html>
